@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ title }}
+{% endblock %}
+13
+{% block content %}
+<div class="row">
+    <p class="col-12">Мы не нашли страницу: &laquo;{{ url }}&raquo;.<br>
+        <a href="{{ url_for('index') }}">Попробуйте вернуться наглавную</a>
+    </p>
+</div>
+{% endblock %}
